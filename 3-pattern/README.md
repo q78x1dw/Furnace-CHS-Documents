@@ -5,26 +5,26 @@ pattern视图让你编辑歌曲的pattern。the pattern view allows you to edit 
 ![pattern view](pattern.png)
 
 一个pattern包括许多列('通道')和带有行号的行.a pattern consists of columns ("channels") and numbered rows.
-每个列都有如下排列的each column has several subcolumns in this order:
+每个列都有如下排列的几个子列each column has several subcolumns in this order:
 
-1. note
-2. instrument
-3. volume
-4. effects, split into effect type and effect value
+1. 音符note
+2. 乐器instrument
+3. 音量volume
+4. 效果,分为效果类型和效果值.effects, split into effect type and effect value
 
-all columns are represented in hexadecimal, except for the note column.
+所有列都用十六进制表示,除了音符列.all columns are represented in hexadecimal, except for the note column.
 
-row highlights show beats and measures, and are configured in the [the Speed window](../2-interface/song-info.md).
+行的高亮显示拍与小节.row highlights show beats and measures, and are configured in the [the Speed window](../2-interface/song-info.md).
 
 
 
-## cursor and selection
+## 光标与选择cursor and selection
 
-you may change the cursor position by clicking anywhere on the pattern.
+你可以通过点击pattern上面的任何位置来改变光标位置you may change the cursor position by clicking anywhere on the pattern.
 
-to select an area, press and hold the left mouse button. then drag the mouse and release the button to finish selection.
+要想选中区域,就长按鼠标左键不动,然后拖动鼠标到结束的地方再放开左键,完成选择.to select an area, press and hold the left mouse button. then drag the mouse and release the button to finish selection.
 
-right-clicking within the pattern view brings up a pop-up menu with most options from the [edit menu](../2-interface/menu-bar.md).
+在pattern视图里面右键会弹出一个菜单,里面有[edit menu](../2-interface/menu-bar.md)里面的大部分选项.right-clicking within the pattern view brings up a pop-up menu with most options from the [edit menu](../2-interface/menu-bar.md).
 
 
 
@@ -101,39 +101,39 @@ here's [a list of effect types](effects.md).
 
 
 
-## keyboard shortcuts
+## 快捷键keyboard shortcuts
 
-these are the default key functions. all keys are configurable in the Keyboard tab of the Settings window.
+这些是默认的键盘快捷键.所有快捷键都在设置窗口里面可以设置.these are the default key functions. all keys are configurable in the Keyboard tab of the Settings window.
 
 key         | action
 ------------|-----------------------------------------------------------------
-Up/Down     | move cursor up/down by one row or the Edit Step (configurable)
-Left/Right  | move cursor left/right
-PageUp      | move cursor up by 16 rows
-PageDown    | move cursor down by 16 rows
-Home        | move cursor to beginning of pattern
-End         | move cursor to end of pattern
-Shift-Home  | move cursor up by exactly one row, overriding Edit Step
-Shift-End   | move cursor down by exactly one row, overriding Edit Step
-Shift-Up    | expand selection upwards
-Shift-Down  | expand selection downwards
-Shift-Left  | expand selection to the left
-Shift-Right | expand selection to the right
-Alt-Up      | move selection up by one
-Alt-Down    | move selection down by one
-Alt-Left    | move selection to previous channel
-Alt-Right   | move selection to next channel
-Backspace   | delete note at cursor and/or pull pattern upwards (configurable)
-Delete      | delete selection
-Insert      | create blank row at cursor position and push pattern
-Ctrl-A      | auto-expand selection (select all)
-Ctrl-X      | cut selection
-Ctrl-C      | copy selection
-Ctrl-V      | paste selection
-Ctrl-Z      | undo
-Ctrl-Y      | redo
-Ctrl-F1     | transpose selection (-1 semitone)
-Ctrl-F2     | transpose selection (+1 semitone)
-Ctrl-F3     | transpose selection (-1 octave)
-Ctrl-F4     | transpose selection (+1 octave)
-Space       | toggle note input (edit)
+Up/Down     | 向上/向下移动一行或者一个Edit Step.move cursor up/down by one row or the Edit Step (configurable)
+Left/Right  | 向左或向右移动光标move cursor left/right
+PageUp      | 向上移动16行move cursor up by 16 rows
+PageDown    | 向下移动16行move cursor down by 16 rows
+Home        | 移动到pattern的开始move cursor to beginning of pattern
+End         | 移动到pattern的结尾move cursor to end of pattern
+Shift-Home  | 向上移动一行,与Edit Step无关.move cursor up by exactly one row, overriding Edit Step
+Shift-End   | 向下移动一行,与Edit Step无关.move cursor down by exactly one row, overriding Edit Step
+Shift-Up    | 向上扩展选区expand selection upwards
+Shift-Down  | 向下扩展选区expand selection downwards
+Shift-Left  | 向左扩展选区expand selection to the left
+Shift-Right | 向右扩展选区expand selection to the right
+Alt-Up      | 选区向上移动一行move selection up by one
+Alt-Down    | 选区向下移动一行move selection down by one
+Alt-Left    | 将选区移动到左边通道move selection to previous channel
+Alt-Right   | 将选区移动到右边通道move selection to next channel
+Backspace   | 删除光标下的音符并将之后的pattern部分上移delete note at cursor and/or pull pattern upwards (configurable)
+Delete      | 删除选区delete selection
+Insert      | 创建空白行并把pattern的之后部分下移.create blank row at cursor position and push pattern
+Ctrl-A      | 自动扩展选区(选中所有)auto-expand selection (select all)
+Ctrl-X      | 剪切选区cut selection
+Ctrl-C      | 复制选区copy selection
+Ctrl-V      | 粘贴选区paste selection
+Ctrl-Z      | 撤销undo
+Ctrl-Y      | 重做redo
+Ctrl-F1     | 选区变调(+1半音)transpose selection (-1 semitone)
+Ctrl-F2     | 选区变调(-1半音)transpose selection (+1 semitone)
+Ctrl-F3     | 选区变调(-1八度)transpose selection (-1 octave)
+Ctrl-F4     | 选区变调(+1八度)transpose selection (+1 octave)
+Space       | 开关音符输入(编辑)toggle note input (edit)
