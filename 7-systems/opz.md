@@ -1,27 +1,27 @@
 # Yamaha OPZ (YM2414)
 
-**disclaimer: despite the name, this has nothing to do with teenage engineering's OP-Z synth!**
+**免责声明: 尽管名字一样, 这和teenage engineering的 OP-Z 合成器无关!disclaimer: despite the name, this has nothing to do with teenage engineering's OP-Z synth!**
 
-this is the YM2151's little-known successor, used in the Yamaha TX81Z and a few other Yamaha synthesizers. oh, and the Korg Z3 too.
+这是YM2151的并不著名的后继者,在Yamaha的TX81Z和其他的几种合成器中使用. 也有Korg Z3. this is the YM2151's little-known successor, used in the Yamaha TX81Z and a few other Yamaha synthesizers. oh, and the Korg Z3 too.
 
-it adds these features on top of the YM2151:
-- 8 waveforms (but they're different from the OPL ones)
-- per-channel (possibly) linear volume control separate from TL
-- increased multiplier precision (in 1/16ths)
-- 4-step envelope generator shift (minimum TL)
-- another LFO
-- no per-operator key on/off
-- fixed frequency mode per operator (kind of like OPN family's extended channel mode but with a bit less precision and for all 8 channels)
-- "reverb" effect (actually extends release)
+在YM2151基础上添加如下特性it adds these features on top of the YM2151:
+- 8个波形(但是与OPL的不一样)8 waveforms (but they're different from the OPL ones)
+- 每个通道的(有可能)线性的音量控制(独立于TL)per-channel (possibly) linear volume control separate from TL
+- 倍频精度提升(精度1/16)increased multiplier precision (in 1/16ths)
+- 4步的4-step envelope generator shift (minimum TL)
+- 另一个LFO another LFO
+- 没有逐个运算器的按键开关no per-operator key on/off
+- 每个通道的固定频率模式(像OPN家族的拓展通道模式但是精度下降,而且每个通道都有) fixed frequency mode per operator (kind of like OPN family's extended channel mode but with a bit less precision and for all 8 channels)
+- "回音"效果 (实际上是拓展的`释放`)"reverb" effect (actually extends release)
 
-unlike the YM2151, this chip is officially undocumented. very few efforts have been made to study the chip and document it...
-therefore emulation of this chip in Furnace is incomplete and uncertain.
+不像YM2151, 这个芯片官方没有文档, 历来没有多少人研究这个文档并制作文档.unlike the YM2151, this chip is officially undocumented. very few efforts have been made to study the chip and document it...
+因此这个芯片在Furnace中的模拟并不完全,不确定.therefore emulation of this chip in Furnace is incomplete and uncertain.
 
-no plans have been made for TX81Z MIDI passthrough, because:
-- Furnace works with register writes rather than MIDI commands
-- the MIDI protocol is slow (would not be enough).
-- the TX81Z is very slow to process a note on/off or parameter change event.
-- the TL range has been reduced to 0-99, but the chip goes from 0-127.
+没有开发TX81Z MIDI直通的计划, 因为:no plans have been made for TX81Z MIDI passthrough, because:
+- Furnace工作原理是写寄存器而不是MIDI模式Furnace works with register writes rather than MIDI commands
+- MIDI协议很慢(可能并不足够)the MIDI protocol is slow (would not be enough).
+- TX81Z处理音符开/关或者参数更改事件非常慢the TX81Z is very slow to process a note on/off or parameter change event.
+- TL范围被降为0-99 但是芯片实际上使用0-127 the TL range has been reduced to 0-99, but the chip goes from 0-127.
 
 ## effects
 

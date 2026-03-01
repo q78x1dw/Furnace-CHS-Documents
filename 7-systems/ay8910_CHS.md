@@ -59,25 +59,25 @@ Furnace可以在AY-3-8910上面可以做软件采样播放,三个通道都可以
 
 AY-3-8910太火爆了,被许多第三方仿制,有的有授权,有的没有.AY-3-810 was an absurdly popular chip that was blessed with many third-party clones, licensed or not.
 
-- the AY-3-8914 variant was used in Intellivision, which is pretty much an 8910 with 4 level envelope volume per channel and different register format.
-- 雅马哈YM2149是1983年发布的AY-3-8910复制品.它几乎与AYYamaha YM2149 was an AY-3-8910 clone released in 1983. it's almost identical to AY with minor differences being: higher hardware envelope step resolution (16 vs 32), half-clock mode when voltage level is low, much stronger DC offset and cleaner, but softer output.
+- AY-3-8914变体在Intellivision使用了,与AY-3-8910差不多,但是每通道有4级包络音量控制,寄存器格式不同.the AY-3-8914 variant was used in Intellivision, which is pretty much an 8910 with 4 level envelope volume per channel and different register format.
+- 雅马哈YM2149是1983年发布的AY-3-8910复制品.它几乎与AY-3-8910一样,只有小的不同:更高的硬件包络阶数分辨率(32而不是16),当低电压时会启用半时钟模式,有更强的DC偏置,输出更加纯净且音色软.Yamaha YM2149 was an AY-3-8910 clone released in 1983. it's almost identical to AY with minor differences being: higher hardware envelope step resolution (16 vs 32), half-clock mode when voltage level is low, much stronger DC offset and cleaner, but softer output.
 - Sunsoft 5B是YM2149的翻版,半时钟模式强制开启.Sunsoft 5B is YM2149 clone with half-clock mode forced on.
 
-## info
+## 有关信息info
 
-this chip uses the [AY-3-8910](../4-instrument/ay8910.md) instrument editor.
+这个芯片使用this chip uses the [AY-3-8910](../4-instrument/ay8910.md) 乐器编辑器instrument editor.
 
-## chip config
+## 芯片配置chip config
 
-the following options are available in the Chip Manager window:
+以下选项在芯片管理器中可用the following options are available in the Chip Manager window:
 
-- **Clock rate**: sets the rate at which the chip will run.
-- **Chip type**: changes the chip model.
+- **时钟频率Clock rate**: 设置芯片运行的时钟频率.sets the rate at which the chip will run.
+- **芯片类型Chip type**: changes the chip model.
   - AY-3-8910: the original model.
   - YM2149(F): Yamaha clone with higher envelope resolution and a different volume curve.
   - Sunsoft 5B: a special model found in one of Sunsoft's Famicom cartridges.
-  - AY-3-8914: scrambled registers. has envelope volume control.
+  - AY-3-8914: 不同的寄存器,可以控制包络音量scrambled registers. has envelope volume control.
 - **Stereo**: enable stereo output. channel 1 is output left, channel 2 is output center and channel 3 is output right.
-  - **Separation**: allows you to set left/right separation.
-- **Half Clock divider**: pulls the half clock pin, running the chip at half the speed.
-  - only available in YM2149.
+  - **分隔Separation**: 自定义左右通道分割allows you to set left/right separation.
+- **半时钟分频器Half Clock divider**: 上拉半时钟引脚,让芯片跑在正常的一半的频率.pulls the half clock pin, running the chip at half the speed.
+  - 只在YM2149可用only available in YM2149.

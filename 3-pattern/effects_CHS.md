@@ -89,10 +89,10 @@
 - `84xy`: **声像振荡Panbrello.** 让声像振荡.`x`是速度,`y`是深度.makes panning oscillate. `x` is the speed, while `y` is the depth.
   - 注意:声像的宏会覆盖这个效果.be noted that panning macros override this effect.
 
-## time
+## 时间time
 
-- `09xx`: **Set speed/groove.** if no grooves are defined, this sets speed. if alternating speeds are active, this sets the first speed.
-- `0Fxx`: **Set speed 2.** during alternating speeds or a groove, this sets the second speed.
+- `09xx`: **设置速度/groove Set speed/groove.** 如果没有定义groove,这个就设置速度. 如果交错的速度可用, 这个就设置第一个速度.if no grooves are defined, this sets speed. if alternating speeds are active, this sets the first speed.
+- `0Fxx`: **设置速度2 Set speed 2.** 在交错速度或者groove中,这个设置第二个速度. during alternating speeds or a groove, this sets the second speed.
   - ---
 - `Cxxx`: **设置tick速率.将tick速率设置为`xxx`Hz.(每秒tick数)Set tick rate.** changes tick rate to `xxx` Hz (ticks per second).
   - `xxx` 可以在`000`和`3ff`之间取值.may be from `000` to `3FF`.

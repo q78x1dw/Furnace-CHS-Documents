@@ -1,26 +1,26 @@
-# grooves
+# 律动grooves
 
-a **groove** is the equivalent of repeating `0Fxx` effects on each row to get a cycle of speeds. for example, a groove of "6 4 5 3" makes the first row 6 ticks long, the next row 4 ticks, then 5, 3, 6, 4, 5, 3...
+一个a **律动 groove** is 是"在每行都重复使用`0Fxx`效果来得到间隔性变化的速度"的等效替代. 例如一个 "6 4 5 3" 律动使得第一行长6 tick, 下一行长 4 tick, 然后是 3 6 4 5 3 ... the equivalent of repeating `0Fxx` effects on each row to get a cycle of speeds. for example, a groove of "6 4 5 3" makes the first row 6 ticks long, the next row 4 ticks, then 5, 3, 6, 4, 5, 3...
 
 ![groove](groove.png)
 
-to set the song's groove:
-- open the "Speed" window.
-- click the "Speed" button so it becomes "Speeds" (effectively a groove of two speeds).
-- click again so it becomes "Groove".
-- enter a sequence of up to 16 speeds.
+要想设置歌曲律动to set the song's groove:
+- 打开"速度"窗口open the "Speed" window.
+- 点击"speed"按钮,然后他变成"speeds" (就是两个速度组成的groove) click the "Speed" button so it becomes "Speeds" (effectively a groove of two speeds).
+- 再点击一次然后他变成 "groove" click again so it becomes "Groove".
+- 输入一个多达16个速度的序列enter a sequence of up to 16 speeds.
 
-![groove patterns](grooves.png)
+![律动样式 groove patterns](grooves.png)
 
-the "Grooves" window displays the list of groove patterns in the song.
-- the **`+`** button adds a new groove pattern; click in the groove pattern to edit it.
-- the **`×`** buttons remove them.
+the "Grooves"窗口显示歌曲中律动样式的列表 window displays the list of groove patterns in the song.
+- `+`按钮添加一个新的律动样式, 点击这个律动样式以编辑它. the **`+`** button adds a new groove pattern; click in the groove pattern to edit it.
+- the **`×`** 按钮可以删除他们buttons remove them.
 
-a single `09xx` command will switch to the matching numbered groove pattern.
+一个单独的 `09xx`指令可以切换到对应数字的律动样式. a single `09xx` command will switch to the matching numbered groove pattern.
 
-## tempo
+## 拍速tempo
 
-this is a non-exhaustive list of grooves and their equivalent tempo in BPM when using NTSC or PAL tick rates (60 or 50) and row highlight values of 4 and 16. for more accurate tempos, differing tick rates, or differing row highlight values, use this [groove calculator](https://pineight.com/ft/calcgroove.html) (courtesy of Damian Yerrick).
+这时一个不完全的,当使用NTSC或PAL拍速(60或者50),行高亮为4和16,时的律动和对应的拍速的列表. 当需要更精确的groove, 用了不同的tick速度,或者使用不同的行高亮值,就使用这个 this is a non-exhaustive list of grooves and their equivalent tempo in BPM when using NTSC or PAL tick rates (60 or 50) and row highlight values of 4 and 16. for more accurate tempos, differing tick rates, or differing row highlight values, use this [律动计算器groove calculator](https://pineight.com/ft/calcgroove.html) (courtesy of Damian Yerrick).
 
 BPM NTSC | BPM PAL | groove                 | | BPM NTSC | BPM PAL | groove
 --------:|--------:|:-----------------------|-|---------:|--------:|:----------------------

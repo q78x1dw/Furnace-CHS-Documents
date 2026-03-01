@@ -28,17 +28,17 @@ pattern视图让你编辑歌曲的pattern。the pattern view allows you to edit 
 
 
 
-## channel bar
+## 通道 条channel bar
 
-using the channel bar, you may adjust several aspects of the channel display.
+使用通道条,你可以调整通道显示的几个方面using the channel bar, you may adjust several aspects of the channel display.
 
 ![channel bar](channelbar.png)
 
-clicking on a channel name mutes that channel.
+点击通道名称就会静音这个通道. clicking on a channel name mutes that channel.
 
-double-clicking or right-clicking it enables solo mode, in which only that channel will be audible.
+双击或者右键就会启用独奏模式, 这时只有这个通道有声音.double-clicking or right-clicking it enables solo mode, in which only that channel will be audible.
 
-clicking the `++` at the top left corner of the pattern view pops up a small menu to set view modes:
+点击左上的 `++`就会弹出一个小菜单有以下项目: clicking the `++` at the top left corner of the pattern view pops up a small menu to set view modes:
 - **Effect columns/collapse**: displays extra options for collapsing channels and adding/removing effect columns:
   - **-**: collapse visible columns. changes to **+** when columns are hidden; click to expand them.
   - **<**: disables the last effect column and hides it. effects are not deleted...
