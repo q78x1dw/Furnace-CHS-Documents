@@ -50,35 +50,35 @@
   - 如果一行已经被选中了,他会选中整个通道if a column is already selected, it will select the entire channel.
   - 如果一个通道已经被选中,他会选中整个patternif a channel is already selected, it will select the entire pattern.
 - **操作掩码operation mask**: 列出哪些列会被列出的操作影响toggles which columns will be affected by the listed operations. [这里有更多信息more information here.](../8-advanced/opmask.md)
-- **输入所存input latch**: 决定哪些数据随同音符防止determines which data are placed along with a note. [这里有详情more information here.](../8-advanced/inputlatch.md)
+- **输入所存input latch**: 决定哪些数据随同音符放置determines which data are placed along with a note. [这里有详情more information here.](../8-advanced/inputlatch.md)
 - **音符note/八度octave 上升up/下降down**: 对于目前的选区的音符转调transposes notes in the current selection.
-- **values up/down**: changes values in the current selection by ±1 or ±16.
-- **transpose**: transpose notes or change values by a specific amount.
-- **interpolate**: fills in gaps in the selection by interpolation between values.
-- **change instrument...**: changes the instrument number in a selection.
-- **gradient/fade...**: replace the selection with a "gradient" that goes from the beginning of the selection to the end.
-  - does not affect the note column.
-  - **Nibble mode**: when enabled, the fade will be per-nibble (0 to F) rather than per-value (00 to FF).
-    - use for effects like `04xy` (vibrato).
-- **scale...**: scales values in the selection by a specific amount.
-  - use to change volume in a selection for example.
-- **randomize**: replaces the selection with random values.
-  - does not affect the note column.
-  - **Nibble mode**: when enabled, the randomization will be per-nibble (0 to F) rather than per-value (00 to FF).
-  - **Set effect:**: only appears when the selection includes an effect column. if enabled, an input box will appear. instead of being randomized, all effect types in the selection will be changed to the value entered.
-- **invert values**: `00` becomes `FF`, `01` becomes `FE`, `02` becomes `FD` and so on.
-- **flip selection**: flips the selection so it is backwards.
-- **collapse/expand amount**: allows you to specify how much to collapse/expand in the next two menu items.
-- **collapse**: shrinks the selected contents.
-- **expand**: expands the selected contents.
-- **collapse pattern**: same as collapse, but affects the entire pattern.
-- **expand pattern**: same as expand, but affects the entire pattern.
-- **collapse song**: same as collapse, but affects the entire song.
-  - it also changes speeds and pattern length to compensate.
-- **expand song**: same as expand, but affects the entire song.
-  - it also changes speeds and pattern length to compensate.
-- **find/replace**: shows [the Find/Replace window](../8-advanced/find-replace.md).
-- **clear...**: opens a window that allows you to mass-delete things like songs, unused instruments, and the like.
+- **值增加/减少values up/down**: 按照±1 或者 ±16改变选区内的值 changes values in the current selection by ±1 or ±16.
+- **变调transpose**: 按照指定值变调音符或者改变值transpose notes or change values by a specific amount.
+- **填充间隙interpolate**: 通过插入中间值,填充选区的间隙fills in gaps in the selection by interpolation between values.
+- **改变乐器change instrument...**: 改变选区的乐器数字changes the instrument number in a selection.
+- **梯度上升/下降gradient/fade...**: 将选区换为一个 从开始处到结束处的 "梯度" replace the selection with a "gradient" that goes from the beginning of the selection to the end.
+  - 不影响音符列does not affect the note column.
+  - **半字节模式Nibble mode**: 当开启when enabled, 下降将针对每半个字节(0到F)而不是针对一个字节(00 到 FF)the fade will be per-nibble (0 to F) rather than per-value (00 to FF).
+    - 用于诸如`04xy`(颤音)的效果use for effects like `04xy` (vibrato).
+- **缩放scale...**: 将选区的值缩放指定的数量scales values in the selection by a specific amount.
+  - 例如用于改变选区内的音量use to change volume in a selection for example.
+- **随机化randomize**: 将选区替换为随机值replaces the selection with random values.
+  - 不影响音符列does not affect the note column.
+  - **半字节模式Nibble mode**: 当开启when enabled, 随机化将针对每半个字节(0到F)而不是针对一个字节(00 到 FF)the fade will be per-nibble (0 to F) rather than per-value (00 to FF).
+  - **设置效果Set effect:**: 只出现在选区包括一个效果列的时候. 如果启用, 一个输入框会出现. 它不会随机化,而是把选区内所有效果类型改为输入的值only appears when the selection includes an effect column. if enabled, an input box will appear. instead of being randomized, all effect types in the selection will be changed to the value entered.
+- **反转值invert values**: `00` 变为becomes `FF`, `01` 变为becomes `FE`, `02` 变为becomes `FD` 以此类推and so on.
+- **调换选区方向flip selection**: 调换选区使得他从下到上flips the selection so it is backwards.
+- **收束/拓展collapse/expand amount**: 让你选择在接下来2个菜单项要收束/拓展多少allows you to specify how much to collapse/expand in the next two menu items.
+- **收束collapse**: 压缩选中的内容shrinks the selected contents.
+- **拓展expand**: 拉伸选中的内容expands the selected contents.
+- **收束pattern collapse pattern**: 同收束,但是影响整个pattern. same as collapse, but affects the entire pattern.
+- **拓展pattern expand pattern**: 同拓展,但是影响整个pattern. same as expand, but affects the entire pattern.
+- **收束歌曲collapse song**: 同收束,但是影响整个歌曲same as collapse, but affects the entire song.
+  - 他也相适应地同步改变速度和pattern长度 it also changes speeds and pattern length to compensate.
+- **拓展歌曲expand song**: 同拓展,但是影响整个歌曲same as expand, but affects the entire song.
+  - 他也相适应地同步改变速度和pattern长度 it also changes speeds and pattern length to compensate.
+- **查找/替换find/replace**: shows [the Find/Replace window](../8-advanced/find-replace.md).
+- **清楚clear...**: 打开一个窗口让你大量删除东西, 例如子乐曲, 没用的乐器之类 opens a window that allows you to mass-delete things like songs, unused instruments, and the like.
 
 ## 设置settings
 
@@ -131,20 +131,20 @@
 
 ## 帮助help
 
-- **effect list**: displays the effect list.
-- **debug menu**: this menu contains various debug utilities.
-  - unless you are working with the Furnace codebase, it's not useful.
+- **效果列表effect list**: displays the effect list.
+- **调试菜单debug menu**: 这个菜单包含几个调试实用程序this menu contains various debug utilities.
+  - 除非你在进行Furnace开发, 这个没有用unless you are working with the Furnace codebase, it's not useful.
 - **inspector**: this option shows the Dear ImGui Metrics/Debugger window.
-  - unless you are working with the Furnace codebase, it's not useful.
-- **panic**: this resets all chips while the song is playing, effectively silencing everything.
-- **about...**: displays the About screen.
+  - 除非你在进行Furnace开发, 这个没有用 unless you are working with the Furnace codebase, it's not useful.
+- **全部复位panic**: 在曲目播放中,这个复位所有芯片, 所以能有效静音正在播放的所有声音 this resets all chips while the song is playing, effectively silencing everything.
+- **关于about...**: displays the About screen.
 
-at the end of the menu bar, more information may be shown:
-- during editing, information about the data under the cursor will be shown here:
-  - note or note modifier.
-  - instrument number and name.
-  - volume in decimal, hex, and percentage.
-  - effect type and description.
-- during playback, these values will be displayed:
+在菜单栏的最后, 显示了更多信息at the end of the menu bar, more information may be shown:
+- 编辑中, 会在这里显示光标下的数据的信息during editing, information about the data under the cursor will be shown here:
+  - 音符或者音符改变符号 note or note modifier.
+  - 乐器名称和数字instrument number and name.
+  - 十进制, 十六进制和百分比音量volume in decimal, hex, and percentage.
+  - 效果类型和说明effect type and description.
+- 播放中, 这些值会显示during playback, these values will be displayed:
   - `speed/groove @ tick rate (BPM) | order | row | elapsed time`
-- if any changes or edits have been made but not yet saved, "modified" will appear.
+- 如果做出来任何修改或编辑但是没有保存, 会显示 "修改过modified" if any changes or edits have been made but not yet saved, "modified" will appear.
